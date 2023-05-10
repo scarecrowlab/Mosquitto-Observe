@@ -53,9 +53,6 @@ api :
 	naturaldocs -o HTML api -i lib -p p
 	rm -rf p
 
-docs :
-	set -e; for d in ${DOCDIRS}; do $(MAKE) -C $${d}; done
-
 binary : mosquitto
 
 mosquitto :
